@@ -49,8 +49,9 @@ app.register(cors) // you need this if you want to be able to add the server to 
 app.register(mercurius, {
   schema: basicSchema,
   resolvers: basicResolvers,
-  path: '/api/graphql',
-  graphiql: true
+  path: '/graphql',
+  graphiql: true,
+  prefix: '/api'
 })
 
 const apiKey: string = process.env.APOLLO_KEY as string
