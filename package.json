@@ -1,0 +1,42 @@
+{
+  "name": "vercel-serverless-mercurius-sample-api",
+  "version": "1.0.0",
+  "description": "small sample mercurius Graphql API deployed on vercel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/capaj/vercel-serverless-mercurius-sample-api.git"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/capaj/vercel-serverless-mercurius-sample-api/issues"
+  },
+  "homepage": "https://github.com/capaj/vercel-serverless-mercurius-sample-api#readme",
+  "devDependencies": {
+    "@types/faker": "^5.5.8",
+    "@vercel/node": "^1.12.1",
+    "husky": "^7.0.2",
+    "prettier": "^2.4.1",
+    "pretty-quick": "^3.1.1"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "faker": "^5.5.3",
+    "fastify": "^3.22.0",
+    "fastify-cors": "^6.0.2",
+    "mercurius": "^8.6.0",
+    "mercurius-apollo-tracing": "^0.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
